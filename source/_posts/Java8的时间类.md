@@ -1,5 +1,5 @@
 ---
-title: java8的时间类
+title: Java8的时间类
 date: 2019-03-17 11:28:59
 categories:
 - 技术
@@ -10,14 +10,14 @@ tags:
 - API
 ---
 
-# 首先看官方文档怎么说
+### 首先看官方文档怎么说
 
- 关于时间的api在java.base模块下（moduls）的java.time包里。
+ 关于时间的API在java.base模块下（modules）的java.time包里。
 - - -  
 Package java.time
 The main API for dates, times, instants, and durations.
 
-主要针对dates(日期),times(时间),instants(瞬时),durations(间隔)的api。
+主要针对dates(日期),times(时间),instants(瞬时),durations(间隔)的API。
 
 <!--more-->
 
@@ -28,12 +28,12 @@ The classes defined here represent the principle date-time concepts, including i
 
 Each date time instance is composed of fields that are conveniently made available by the APIs. For lower level access to the fields refer to the java.time.temporal package. Each class includes support for printing and parsing all manner of dates and times. Refer to the java.time.format package for customization options.
 
-每一个date time的实列都由一些能够通过apis非常方便访问的域(field)构成，对于这些域更第一级别的入口定义在包java.time.temporal里面。每一个类都之称各种格式的dates和times，在
+每一个date time的实列都由一些能够通过APIs非常方便访问的域(field)构成，对于这些域更第一级别的入口定义在包java.time.temporal里面。每一个类都之称各种格式的dates和times，在
  java.time.format包中定义了供使用者自由组织的选项。
  
 The java.time.chrono package contains the calendar neutral API ChronoLocalDate, ChronoLocalDateTime, ChronoZonedDateTime and Era. This is intended for use by applications that need to use localized calendars. It is recommended that applications use the ISO-8601 date and time classes from this package across system boundaries, such as to the database or across the network. The calendar neutral API should be reserved for interactions with users.
 
-java.time.chrono 定义了一些中性的api，这些api都是应用将要通过本地的日历使用的，它在应用跨系统范围外例如连接网络，访问数据库时，推荐使用本包中的ISO-8601的date和time类，中性化的api应该留给用户
+java.time.chrono 定义了一些中性的API，这些API都是应用将要通过本地的日历使用的，它在应用跨系统范围外例如连接网络，访问数据库时，推荐使用本包中的ISO-8601的date和time类，中性化的api应该留给用户
 
 Dates and Times
 Instant is essentially a numeric timestamp. The current Instant can be retrieved from a Clock. This is useful for logging and persistence of a point in time and has in the past been associated with storing the result from System.currentTimeMillis().
@@ -212,7 +212,7 @@ API也为用户的扩展进行了设计，例如有许多方式进行时间的�
      customer.sendBirthdaySpecialOffer(specialOfferExpiryDate);
    }
    
-#    测试用例试一下
+###    测试用例试一下
 
 ```
 @Test
@@ -254,7 +254,7 @@ API也为用户的扩展进行了设计，例如有许多方式进行时间的�
     }
 
  ```
- # note
+### note
 1.  官方文档对设计的基本概念进行了阐述 
       - 遵循iso
       - 面向对象

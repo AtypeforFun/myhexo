@@ -1,5 +1,5 @@
 ---
-title: joda-time和jdk1.7的Date相互转换绕弯记录
+title: Joda-Time转化Jdk的Date绕弯记录
 date: 2019-05-25 11:28:59
 categories:
 - 技术
